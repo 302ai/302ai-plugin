@@ -1,0 +1,47 @@
+{
+	"name": "@302ai/302ai-plugin",
+	"version": "1.0.0",
+	"description": "302.AI provider plugin for 302 AI Studio",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist",
+		"plugin.json",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"clean": "rm -rf dist",
+		"package": "pnpm run build && node scripts/package.js"
+	},
+	"keywords": [
+		"302ai",
+		"plugin",
+		"302ai",
+		"provider",
+		"multi-model",
+		"ai"
+	],
+	"author": "302.AI",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/302ai/302ai-plugin.git"
+	},
+	"bugs": {
+		"url": "https://github.com/302ai/302ai-plugin/issues"
+	},
+	"homepage": "https://github.com/302ai/302ai-plugin#readme",
+	"peerDependencies": {
+		"@302ai/studio-plugin-sdk": "^1.0.0"
+	},
+	"devDependencies": {
+		"@302ai/studio-plugin-sdk": "^1.0.0",
+		"@types/node": "^22.0.0",
+		"archiver": "^7.0.0",
+		"tsup": "^8.0.0",
+		"typescript": "^5.6.0"
+	}
+}
