@@ -24,6 +24,7 @@
 		"multi-model",
 		"ai"
 	],
+	"packageManager": "pnpm@10.9.0",
 	"author": "302.AI",
 	"license": "MIT",
 	"repository": {
